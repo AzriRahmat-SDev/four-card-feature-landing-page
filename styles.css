@@ -1,128 +1,128 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
-:root{
-    --Red: hsl(0, 78%, 62%);
-    --Cyan: hsl(180, 62%, 55%);
-    --Orange: hsl(34, 97%, 64%);
-    --Blue: hsl(212, 86%, 64%);
-    --VeryDarkBlue: hsl(234, 12%, 34%);
-    --GrayishBlue: hsl(229, 6%, 66%);
-    --VeryLightGray: hsl(0, 0%, 98%);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+:root {
+	--Red: hsl(0, 78%, 62%);
+	--Cyan: hsl(180, 62%, 55%);
+	--Orange: hsl(34, 97%, 64%);
+	--Blue: hsl(212, 86%, 64%);
+	--VeryDarkBlue: hsl(234, 12%, 34%);
+	--GrayishBlue: hsl(229, 6%, 66%);
+	--VeryLightGray: hsl(0, 0%, 98%);
 }
-*{
-    box-sizing: border-box;
+* {
+	box-sizing: border-box;
 }
-body{
-    height: 100vh;
-    padding-top: 20px;
-    font-size: 15px;
-    font-family: Poppins, sans-serif;
-    background-color: hsl(0, 0%, 98%);
-}
-
-.hero-wrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+body {
+	height: 100vh;
+	padding-top: 20px;
+	font-size: 15px;
+	font-family: Poppins, sans-serif;
+	background-color: hsl(0, 0%, 98%);
 }
 
-header{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+.hero-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
-h1{
-    text-align: center;
-    font-weight: 400;
-    font-size: 32px;
-    color: var(--VeryDarkBlue);
+header {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
 }
 
-h1 span{
-    font-weight: 600;
+h1 {
+	text-align: center;
+	font-weight: 400;
+	font-size: 32px;
+	color: var(--VeryDarkBlue);
 }
 
-h2{
-    font-weight: 400;
-    margin: auto;
-    font-size: 1em;
-    width: 30rem;
-    color: var(--GrayishBlue);
+h1 span {
+	font-weight: 600;
 }
 
-main{
-    width: 90%;
-    margin: 40px auto;
-    display: flex;
+h2 {
+	font-weight: 400;
+	margin: auto;
+	font-size: 1em;
+	width: 30rem;
+	color: var(--GrayishBlue);
+}
+
+main {
+	width: 90%;
+	margin: 40px auto;
+	display: flex;
 }
 
 main > * {
-    flex-basis: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+	flex-basis: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
-section{
-    border-radius: 5px;
-    box-shadow: 5px 10px 18px hsl(229, 6%, 66%);
-    margin: 15px;
-    padding: 2rem;
-    color: var(--GrayishBlue);
+section {
+	border-radius: 5px;
+	box-shadow: 5px 10px 18px hsl(229, 6%, 66%);
+	margin: 15px;
+	padding: 2rem;
+	color: var(--GrayishBlue);
 }
-h3{
-    color: var(--VeryDarkBlue);
+h3 {
+	color: var(--VeryDarkBlue);
 }
-.hero-content-left{
-    border-top: 5px solid var(--Cyan);
+.hero-content-left {
+	border-top: 5px solid var(--Cyan);
 }
-.hero-content-middle-top{
-    border-top: 5px solid var(--Red);
-}
-
-.hero-content-middle-bottom{
-    border-top: 5px solid var(--Orange);
+.hero-content-middle-top {
+	border-top: 5px solid var(--Red);
 }
 
-.hero-content-right{
-    border-top: 5px solid var(--Blue);
+.hero-content-middle-bottom {
+	border-top: 5px solid var(--Orange);
 }
-img{
-    float: right;
-    margin-top: 1em;
+
+.hero-content-right {
+	border-top: 5px solid var(--Blue);
 }
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
+img {
+	float: right;
+	margin-top: 1em;
+}
+.attribution {
+	font-size: 11px;
+	text-align: center;
 }
 .attribution a {
-    color: hsl(228, 45%, 44%); 
+	color: hsl(228, 45%, 44%);
 }
-.attribution a:hover{
-    color: hsl(228, 85%, 44%);
+.attribution a:hover {
+	color: hsl(228, 85%, 44%);
 }
-
 
 /* allow the card element to stack in the column */
-@media screen and (max-width:1100px) {
-    main {
-        width: 100%;
-        max-width: 450px;
-        flex-direction: column;
-    }
+@media screen and (max-width: 1100px) {
+	main {
+		width: 100%;
+		max-width: 450px;
+		flex-direction: column;
+	}
 }
 
-@media screen and (max-width:550px){
-    body {
-        padding: 20px 10px 10px;
-    }
-    h1, h2 {
-        padding: 0;
-    }
-    h2 {
-        width: 100%;
-    }
-    section {
-        margin: 10px;
-    }
+@media screen and (max-width: 550px) {
+	body {
+		padding: 20px 10px 10px;
+	}
+	h1,
+	h2 {
+		padding: 0;
+	}
+	h2 {
+		width: 100%;
+	}
+	section {
+		margin: 10px;
+	}
 }
