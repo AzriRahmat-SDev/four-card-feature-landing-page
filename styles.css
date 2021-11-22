@@ -1,6 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+:root{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --VeryDarkBlue: hsl(234, 12%, 34%);
+    --GrayishBlue: hsl(229, 6%, 66%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+}
+*{
+    box-sizing: border-box;
+}
 body{
     height: 100vh;
-    width: auto;
+    padding-top: 20px;
+    font-size: 15px;
+    font-family: Poppins, sans-serif;
     background-color: hsl(0, 0%, 98%);
 }
 
@@ -11,242 +26,103 @@ body{
     justify-content: center;
 }
 
-.header{
+header{
     display: flex;
     flex-direction: column;
-    padding-top: 5rem;
-    padding-bottom: 3rem;
+    text-align: center;
 }
 
-.main-header{
+h1{
     text-align: center;
-    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 32px;
+    color: var(--VeryDarkBlue);
 }
 
-.secondary-header{
-    text-align: center;
-    font-family: "Poppins", "sans-serif";
+h1 span{
     font-weight: 600;
-    font-size: 32px;
 }
 
-.tertiary-header{
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
+h2{
     font-weight: 400;
-    font-size: 15px;
+    margin: auto;
+    font-size: 1em;
     width: 30rem;
+    color: var(--GrayishBlue);
 }
 
-.hero-content{
-    display:flex;
-    flex-direction: row;
-    align-items: center;
+main{
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+}
+
+main > * {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
-
+section{
+    border-radius: 5px;
+    box-shadow: 5px 10px 18px hsl(229, 6%, 66%);
+    margin: 15px;
+    padding: 2rem;
+    color: var(--GrayishBlue);
+}
+h3{
+    color: var(--VeryDarkBlue);
+}
 .hero-content-left{
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    background-color: white;
-    height: auto;
-    width: auto;
-    border-radius: 5px;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    box-shadow: 5px 10px 18px hsl(229, 6%, 66%);
-    border-top-style: solid;
-    border-top-color: hsl(0, 78%, 62%);
-    border-top-width: 5px;
+    border-top: 5px solid var(--Cyan);
 }
-
-.hero-content-left-title{
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    text-align: left;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 28px;
-    color: hsl(234, 12%, 34%);
-}
-
-.hero-content-left-content{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 1vw;
-    height: 17.5vh;
-    width: 17.5vw;
-    color: hsl(229, 6%, 66%);
-    background: url("./images/icon-supervisor.svg");
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-position-x: right;
-}
-
-.hero-content-middle{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 30vw;
-}
-
 .hero-content-middle-top{
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    background-color: white;
-    height: auto;
-    width: auto;
-    border-radius: 5px;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    box-shadow: 5px 10px 18px hsl(229, 6%, 66%);
-    border-top-style: solid;
-    border-top-color: hsl(180, 62%, 55%);
-    border-top-width: 5px;
-}
-
-.hero-content-middle-top-title{
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    text-align: left;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 28px;
-    color: hsl(234, 12%, 34%);
-}
-
-.hero-content-middle-top-content{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 1vw;
-    height: 17.5vh;
-    width: 17.5vw;
-    color: hsl(229, 6%, 66%);
-    background: url("./images/icon-team-builder.svg");
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-position-x: right;
+    border-top: 5px solid var(--Red);
 }
 
 .hero-content-middle-bottom{
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    background-color: white;
-    height: auto;
-    width: auto;
-    border-radius: 5px;
-    margin-top: 3rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    box-shadow: 5px 10px 18px hsl(229, 6%, 66%);
-    border-top-style: solid;
-    border-top-color: hsl(34, 97%, 64%);
-    border-top-width: 5px;
-}
-
-.hero-content-middle-bottom-title{
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    text-align: left;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 28px;
-    color: hsl(234, 12%, 34%);
-}
-
-.hero-content-middle-bottom-content{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 1vw;
-    height: 17.5vh;
-    width: 17.5vw;
-    color: hsl(229, 6%, 66%);
-    background: url("./images/icon-karma.svg");
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-position-x: right;
+    border-top: 5px solid var(--Orange);
 }
 
 .hero-content-right{
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    background-color: white;
-    height: auto;
-    width: auto;
-    border-radius: 5px;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    box-shadow: 5px 10px 18px hsl(229, 6%, 66%);
-    border-top-style: solid;
-    border-top-color: hsl(212, 86%, 64%);
-    border-top-width: 5px;
+    border-top: 5px solid var(--Blue);
 }
-
-.hero-content-right-title{
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    text-align: left;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 28px;
-    color: hsl(234, 12%, 34%);
+img{
+    float: right;
+    margin-top: 1em;
 }
-
-.hero-content-right-content{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 1vw;
-    height: 17.5vh;
-    width: 17.5vw;
-    color: hsl(229, 6%, 66%);
-    background: url("./images/icon-calculator.svg");
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-position-x: right;
-}
-
 .attribution { 
-    display: flex;
-    flex: 3;
-    font-size: 32px; 
+    font-size: 11px; 
     text-align: center; 
-    color: hsl(229, 6%, 66%);
-    justify-content: center;
-    align-items: center;
-    margin-top: 3em;
 }
-
 .attribution a {
     color: hsl(228, 45%, 44%); 
+}
+.attribution a:hover{
+    color: hsl(228, 85%, 44%);
+}
+
+
+/* allow the card element to stack in the column */
+@media screen and (max-width:1100px) {
+    main {
+        width: 100%;
+        max-width: 450px;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:550px){
+    body {
+        padding: 20px 10px 10px;
+    }
+    h1, h2 {
+        padding: 0;
+    }
+    h2 {
+        width: 100%;
+    }
+    section {
+        margin: 10px;
+    }
 }
